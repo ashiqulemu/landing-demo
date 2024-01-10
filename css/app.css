@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   background: rgba(33, 37, 56, 0.88);
   z-index: 10;
-  border-bottom: 2px solid rgba(255, 59, 79, 0.2039215686);
+  border-bottom: 2px solid #FBB040;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(4px);
   animation: fromTop 0.6s backwards;
@@ -344,7 +344,9 @@ section.default.skill {
   background-color: #1E2234;
 }
 section.default.portfolio {
-  background-color: #222539;
+  background-image: linear-gradient(178deg, rgb(19, 7, 129), rgba(255, 152, 0, 0.47)), url(../images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 section.default.testimonial-section {
   padding: 90px 0;
@@ -636,9 +638,10 @@ section.default.contact-section .secTtile {
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.4196078431);
   background: #1d2233;
   transition: all 0.4s ease-in-out;
+  border: 2px solid rgba(138, 136, 136, 0.308);
 }
 .card-style:hover {
-  transform: translateY(-5px);
+  border: 2px solid #FBB040;
 }
 .card-style .project-name {
   padding: 10px 15px;
